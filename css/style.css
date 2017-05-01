@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    padding:0;
+    min-width: 640px;
+    color: #878787;
+    background: linear-gradient(45deg, transparent 30%, rgba(204, 51, 0, 0.2) 70%, rgba(204, 51, 0,0.2)),
+    linear-gradient(-45deg, rgba(204, 51, 0,0.2) 30%, transparent 70%, transparent);
+
+}
+.container {
+    margin:auto;
+    width: 960px;
+}
+
+.main, .list {
+    box-shadow: 10px 10px 5px grey;
+    padding: 2% 2%;
+    margin: 2%;
+}
+
+img.main-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px grey;
+}
+h1.intro, figure.intro{
+    text-align: center;
+}
+
+div.right-side{
+    float: right;
+    margin-right: 5%;
+}
+
+div.left-side{
+    float:left;
+    margin-left: 5%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+div>a{
+    text-decoration: none;
+    color: #878787;
+}
+
+li>a{
+    color: #878787;
+}
+
+footer{
+    padding: 2% 2%;
+}
+
+div>a>i{
+    margin-left: 10px;
+}
+
+div .itemBordered{
+    border: 1px solid #878787;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+div .itemBordered span{
+    padding: 5px;
+}
+
+.detailsItem h4:hover, .itemBordered {
+    cursor: pointer;
+}
+
+.detailsItem h4{
+    width: 30%}
+
+.detailsItem.hide h4 {
+    color:  #878787;
+    background-color: rgba(204, 51, 0, 0.3) }
+
+.detailsItem.hide div {
+    display: none;
+}
+
+body > div.container > div > ul > li > div > div > div > p{
+    margin-left: 30px;
+}
+
+.modalWin {
+    height: 200px;
+    width: 300px;
+    background: papayawhip;
+    top: 20%;
+    right: 0;
+    left: 0;
+    font-size: 14px;
+    margin: 0 auto;
+    z-index:2;
+    display: none;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #5e5e5e;
+}
+.shadow {
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background:#000;
+    opacity: 0.5;
+    left:0;
+    top:0;
+}
+
+.modalWin button{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border-radius: 5px;
+    color: red;
+}
+
